@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func BinarySearch(arr []int, num int) int {
 	return search(arr, 0, len(arr), num)
 }

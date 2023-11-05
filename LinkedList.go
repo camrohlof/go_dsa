@@ -17,7 +17,7 @@ type Node struct {
 	prev *Node
 }
 
-func (n *Node) new(val int) *Node {
+func createNode(val int) *Node {
 	return &Node{val, nil, nil}
 }
 
@@ -35,7 +35,7 @@ func (ll *LinkedList) print() {
 }
 
 func (ll *LinkedList) append(item int) {
-	newNode := (*Node).new(item)
+	newNode := createNode(item)
 	if ll.tail == nil {
 		ll.head = newNode
 		ll.tail = newNode
